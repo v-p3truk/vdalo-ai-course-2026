@@ -1,48 +1,37 @@
 # Доступ до AI-агентів — гайд
 
-Швидкий огляд 4 інструментів. Який обрати — в кінці.
+Швидкий огляд 4 десктопних інструментів. Який обрати — в кінці.
 
 ---
 
 ## TL;DR
 
-| Tool | Free? | Підписка | Trial |
-|------|-------|----------|-------|
-| **Codex CLI** (OpenAI) | ❌ | ChatGPT Plus $20/міс або Team/Enterprise | Іноді 7-14 днів для нових юзерів |
-| **Claude Code** (Anthropic) | ❌ | Claude Pro $20/міс або pay-per-use API | Без офіційного trial |
-| **Antigravity** (Google) | ✅ | Безкоштовно з Gemini 2.5 | n/a |
-| **Cursor** | ✅ Free tier | Pro $20/міс | 14-day Pro trial |
+| Tool | Платформа | Free? | Підписка | Trial |
+|------|-----------|-------|----------|-------|
+| **ChatGPT (Codex)** | Mac / Windows | ❌ | Plus $20/міс або Team/Enterprise | Іноді 7-14 днів для нових юзерів |
+| **Claude Desktop** | Mac / Windows / Linux | ❌ Free обмежений | Pro $20/міс або pay-per-use API | Без офіційного — є invite-trials |
+| **Antigravity** | Mac / Windows / Linux | ✅ | Безкоштовно з Gemini 2.5 | n/a |
+| **Cursor** | Mac / Windows / Linux | ✅ Free tier | Pro $20/міс | 14-day Pro trial |
 
 ---
 
-## Codex CLI
+## ChatGPT desktop (з Codex)
 
-```bash
-# macOS
-brew install openai/codex/codex
+**Скачати:** https://openai.com/chatgpt/download
 
-# Універсально (npm)
-npm install -g @openai/codex
+ChatGPT desktop app має вбудовану панель **Codex** (з'являється у вкладках зліва) — там той самий агент, тільки без терміналу. Працюєш як в звичайному чаті, тільки агент бачить твою папку проєкту.
 
-# Залогін
-codex login
-```
-
-**Підписка:** ChatGPT Plus ($20/міс), Team або Enterprise. Free акаунт не дає доступу до Codex CLI.
+**Підписка:** ChatGPT Plus ($20/міс), Team або Enterprise. Free акаунт не дає доступу до Codex.
 **Trial:** OpenAI періодично пропонує 7-14 днів для нових юзерів. У різних країнах непередбачувано.
 **Файл контексту:** `AGENTS.md`
 
 ---
 
-## Claude Code
+## Claude Desktop
 
-```bash
-# macOS / Linux
-npm install -g @anthropic-ai/claude-code
+**Скачати:** https://claude.ai/download
 
-# Залогін
-claude login
-```
+Десктопний клієнт Claude.ai з вбудованим **Claude Code** — агент який працює з твоєю папкою проєкту в окремій панелі.
 
 **Підписка:** Claude Pro $20/міс (з лімітами на день), Max $100-200/міс (без лімітів), або через API ключ pay-per-use ($5-30/міс залежно від використання).
 **Trial:** офіційного нема, але є **invite-based trials** — періодично доступні через спільноту.
@@ -50,23 +39,25 @@ claude login
 
 ---
 
-## Antigravity
+## Antigravity (Google IDE)
 
-1. Скачати: https://antigravity.google.com (або через Google AI Studio)
-2. Залогінитись через Google акаунт
-3. Відкрити папку проєкту в IDE
-4. Створити `GEMINI.md` як файл контексту
+**Скачати:** https://antigravity.google.com (або через Google AI Studio)
+
+1. Скачати → залогінитись через Google акаунт
+2. Відкрити папку проєкту в IDE
+3. Створити `GEMINI.md` як файл контексту
 
 **Free tier:** Gemini 2.5 Flash і Pro з rate limits (для 1-2 годин роботи на день вистачає)
 **Файл контексту:** `GEMINI.md`
 
 ---
 
-## Cursor
+## Cursor (IDE)
 
-1. Скачати: https://cursor.com
-2. Залогін через Google або email
-3. Pro trial — 14 днів автоматично
+**Скачати:** https://cursor.com
+
+1. Скачати → залогін через Google або email
+2. Pro trial — 14 днів автоматично
 
 **Free tier:** обмежений (slower models, обмежена кількість запитів)
 **Pro:** $20/міс
@@ -78,8 +69,8 @@ claude login
 
 | Сценарій | Рекомендація |
 |----------|--------------|
-| Команда має корпоративну ChatGPT Team/Enterprise | Codex CLI під корпоративним логіном |
-| Хочу однакову екосистему за свої гроші | Codex Plus ($20) або Claude Pro ($20) |
+| Команда має корпоративну ChatGPT Team/Enterprise | ChatGPT desktop з Codex під корпоративним логіном |
+| Хочу однакову екосистему за свої гроші | ChatGPT Plus ($20) або Claude Pro ($20) |
 | Хочу спочатку безкоштовно | Antigravity (free) або Cursor (14-day trial) |
 | Гнучко (mix) | OK — техніки переносяться. `AGENTS.md` / `CLAUDE.md` / `GEMINI.md` / `.cursorrules` мають однаковий зміст |
 

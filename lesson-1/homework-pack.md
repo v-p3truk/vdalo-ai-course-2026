@@ -5,13 +5,33 @@
 
 ---
 
+## 🗺 Звідки що брати
+
+Усі матеріали курсу — на GitHub: **https://github.com/v-p3truk/vdalo-ai-course-2026**
+
+Тут є все що тобі треба:
+
+| Файл | Що з ним робити |
+|------|----------------|
+| **`lesson-1/homework-pack.md`** | Цей файл. Інструкція по ДЗ — читаєш, виконуєш |
+| **`templates/01_brand-context-template.md`** | Template для `AGENTS.md`. Скачуєш → копіюєш у свою папку → перейменовуєш → заповнюєш |
+| **`lesson-1/tools-access-guide.md`** | Куди скачати тулзи (ChatGPT/Codex / Claude Desktop / Antigravity / Cursor) і скільки коштує |
+| `templates/02_workshop-checklist.md` | Чек-ліст для самоперевірки — опційно |
+
+**Як скачати template з GitHub** (вибери як зручно):
+- Клікни на файл → кнопка **"Raw"** (правий верх) → `Cmd+S` / `Ctrl+S` зберегти
+- Або клікни **"Download raw file"** (іконка зі стрілкою вниз)
+- Або через термінал: `curl -O https://raw.githubusercontent.com/v-p3truk/vdalo-ai-course-2026/main/templates/01_brand-context-template.md`
+
+---
+
 ## Що треба зробити
 
 | # | Крок | Час |
 |---|------|-----|
-| 1 | Встановити агента (Codex / Claude Code / Antigravity / Cursor) | 15-30 хв |
+| 1 | Скачати тулзу (ChatGPT / Claude Desktop / Antigravity / Cursor) | 15-30 хв |
 | 2 | Створити папку проєкту під клієнта | 10 хв |
-| 3 | Створити AGENTS.md за template (з GitHub) | 30-60 хв |
+| 3 | Скачати template з GitHub → перейменувати в `AGENTS.md` → заповнити | 30-60 хв |
 | 4 | Виконати 1 реальну задачу з агентом | 30+ хв |
 | 5 | Висновки: що було добре / що ні | 5 хв |
 | 6 | **Оновити AGENTS.md** на основі досвіду | 10-15 хв |
@@ -21,19 +41,15 @@
 
 ---
 
-## A. Встановити агента
+## A. Скачати тулзу
 
-Окреме повідомлення в чаті — там швидкий гайд по 4 опціях (Codex / Claude Code / Antigravity / Cursor) + ціни + trial + спільні акаунти.
+Деталі — у [`tools-access-guide.md`](tools-access-guide.md).
 
 Якщо коротко:
-- **Codex CLI** — `npm install -g @openai/codex`, потрібен ChatGPT Plus
-- **Claude Code** — `npm install -g @anthropic-ai/claude-code`, Pro $20/міс або pay-per-use API
-- **Antigravity** — https://antigravity.google.com, безкоштовно з робочою поштою
-- **Cursor** — https://cursor.com, 14-денний Pro trial
-
-Деталі і альтернативи — у [`tools-access-guide.md`](tools-access-guide.md).
-
-→ Якщо щось не виходить з інсталом — спитай в команді, проведемо разом.
+- **ChatGPT (з Codex)** — https://openai.com/chatgpt/download — Plus $20/міс
+- **Claude Desktop** — https://claude.ai/download — Pro $20/міс
+- **Antigravity** — https://antigravity.google.com — безкоштовно з робочою поштою
+- **Cursor** — https://cursor.com — 14-денний Pro trial
 
 ---
 
@@ -51,15 +67,15 @@
 └── 06_projects/         ← код, боти, лендінги (якщо є)
 ```
 
-Можна створити через UI Finder/Explorer або в терміналі:
+Створи через UI Finder/Explorer — просто **New Folder** і вкладені папки за списком вище. Або в терміналі (якщо звично):
 ```bash
 cd ~/Documents
 mkdir -p MyClient/{01_strategy,03_client_materials,04_creatives,05_reports,06_projects}
 ```
 
 > ⚠️ Файл контексту називається по-різному залежно від агента:
-> - **Codex** → `AGENTS.md`
-> - **Claude Code** → `CLAUDE.md`
+> - **ChatGPT (Codex)** → `AGENTS.md`
+> - **Claude Desktop** → `CLAUDE.md`
 > - **Antigravity** → `GEMINI.md`
 > - **Cursor** → `.cursorrules`
 >
@@ -67,12 +83,16 @@ mkdir -p MyClient/{01_strategy,03_client_materials,04_creatives,05_reports,06_pr
 
 ---
 
-## C. Створити AGENTS.md з template
+## C. Скачати template і заповнити
 
-**Template (приклад) на GitHub:**
-https://github.com/v-p3truk/vdalo-ai-course-2026/blob/main/templates/01_brand-context-template.md
+**Крок 1:** Йдеш на GitHub → скачуєш template
+👉 https://github.com/v-p3truk/vdalo-ai-course-2026/blob/main/templates/01_brand-context-template.md
 
-→ Скопіюй файл у свою робочу папку → перейменуй у `AGENTS.md` (або `CLAUDE.md` / `GEMINI.md` / `.cursorrules`) → заповни.
+Кнопка **"Raw"** → `Cmd+S` / `Ctrl+S` зберегти у свою папку проєкту.
+
+**Крок 2:** Перейменуй у `AGENTS.md` (або `CLAUDE.md` / `GEMINI.md` / `.cursorrules` залежно від тулзи).
+
+**Крок 3:** Відкрий у будь-якому редакторі тексту (можна навіть в самому ChatGPT/Claude/Antigravity/Cursor — він покаже file content) і заповнюй.
 
 **Що принципово важливо заповнити (а не "все підряд"):**
 
@@ -109,7 +129,7 @@ https://github.com/v-p3truk/vdalo-ai-course-2026/blob/main/templates/01_brand-co
 | 5 заголовків для Meta Ad | Дає 5 варіантів з анти-прикладами що НЕ підходить |
 | План публікацій на тиждень | Календар + ідеї постів |
 
-Запускаєш агента у своїй папці → пишеш задачу природньою мовою. Все. Не треба писати "ти експерт..." — для цього і є `AGENTS.md`.
+Відкриваєш свою папку в обраному агенті → пишеш задачу природньою мовою. Все. Не треба писати "ти експерт..." — для цього і є `AGENTS.md`.
 
 ---
 
@@ -183,25 +203,25 @@ https://github.com/v-p3truk/vdalo-ai-course-2026/blob/main/templates/01_brand-co
 | Ресурс | Куди |
 |--------|------|
 | Запис Уроку 1 | https://youtu.be/l4h2Dp7BK8c |
-| Public repo з матеріалами | https://github.com/v-p3truk/vdalo-ai-course-2026 |
-| AGENTS.md template (GitHub) | https://github.com/v-p3truk/vdalo-ai-course-2026/blob/main/templates/01_brand-context-template.md |
+| **GitHub repo з матеріалами** | **https://github.com/v-p3truk/vdalo-ai-course-2026** |
+| AGENTS.md template (raw) | https://raw.githubusercontent.com/v-p3truk/vdalo-ai-course-2026/main/templates/01_brand-context-template.md |
 | Tools access guide | [`tools-access-guide.md`](tools-access-guide.md) |
 
 ---
 
 ## FAQ
 
-**В: А якщо я ніколи не працював з агентом / терміналом?**
-Перші 30 хв виглядатиме незвично — потім норм. Antigravity і Cursor — це IDE (графічний редактор), там простіше старт. Codex/Claude Code — термінал, але теж нестрашно. Якщо стопор — спитай в команді.
+**В: А якщо я ніколи не працював з агентом?**
+Перші 30 хв виглядатиме незвично — потім норм. ChatGPT / Claude Desktop / Antigravity / Cursor — це **просто додатки** з вікном чату всередині, не страшніше за Slack.
 
 **В: А якщо мій клієнт не маркетинговий?**
 Структура папки і AGENTS.md універсальні — заповнюєш під свій випадок.
 
 **В: Чи треба знати програмування?**
-**Ні.** Ми використовуємо AI на природній мові.
+**Ні.** Ми використовуємо AI на природній мові. Жодних команд для терміналу.
 
 **В: Скільки коштує?**
-Codex / Claude Code / Cursor — $20/міс. Antigravity — безкоштовно. Якщо ваша агенція має корпоративну підписку — уточнюйте у адміна.
+ChatGPT / Claude / Cursor — $20/міс. Antigravity — безкоштовно. Якщо ваша агенція має корпоративну підписку — уточнюйте у адміна.
 
 **В: А якщо я плутаюсь — куди звертатись?**
 В команду курсу або issues цього repo. "Дурних" питань на цьому етапі не існує.
